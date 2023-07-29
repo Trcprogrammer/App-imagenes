@@ -1,0 +1,20 @@
+<div class="jumbotron">
+    <form action="" (ngSubmit)="datosFormulario()" >
+  <div class="row mt-4">
+
+    <div class="col-lg-8">
+        <input
+          class="form-control form-control-lg "
+          name="dato"
+          type="text"
+          placeholder="imagen de perro..."
+          [(ngModel)]="datos"
+        />
+    </div>
+    <div class="col-lg-4">
+      <button class="btn btn-outline-primary btn-block w-100" type="submit" >Buscar</button>
+    </div>
+  </div>
+</form>
+
+</div>

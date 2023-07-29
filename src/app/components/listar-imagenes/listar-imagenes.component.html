@@ -1,0 +1,19 @@
+<div class="row row-cols-1 row-cols-md-3 mt-3 g-4">
+  <div class="col" *ngFor="let contenido of urlImagen">
+    <div class="card">
+      <img [src]="contenido.largeImageURL" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <div class="text-center">
+          <a class="btn btn-danger  " target="_blank"  [href]="contenido.webformatURL"
+            >Ver imagen</a
+          >
+
+          <a class="btn btn-primary mx-3" [href]="contenido.previewURL"
+            >Descargar</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div></div>
+</div>
